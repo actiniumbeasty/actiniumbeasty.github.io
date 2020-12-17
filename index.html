@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>i am so very bored rn</title>
+        <title>a cure for my boredom</title>
     </head>
     <style>
         body {
@@ -16,14 +16,39 @@
             width:380px;
             height:155px;
             position:absolute;
-            top:80px;
+            top:140px;
             padding:5px;
+            border: solid white 1px;
+            display:none;
+        }
+        .button {
+            background-color: rgb(79,79,79);
+            border: solid black 1;
+            color: white;
+            padding: 6px 8px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor:pointer;
         }
     </style>
     <body>
         <h1>Hi!</h1>
+        <button class="button" onclick="myFunction()"> About Me            </button>
         <div id="about" class="aboutMe">
             <p> Hello! I am a casual programmer who enjoys writing pages in HTML. I started coding in about April 2020 when the pandemic started and this was something that kept me entertained over the long periods where everyone had to stay at home. This is just something that won't really be updated. I will try and maintain it as best I can, but this is really just a side thing and schoolwork will be my main focus for a while. </p>
         </div>
+        <script>
+            function myFunction() {
+  var x = document.getElementById("about");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+        </script>
     </body>
 </html>
