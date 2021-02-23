@@ -31,16 +31,6 @@
             border: solid gray 1px;
             display:none;
         }
-        .courier {
-            background-color:rgb(79, 79, 79);
-            width:380px;
-            height:20px;
-            position:absolute;
-            top:200px;
-            padding:5px;
-            border: solid gray 1px;
-            display:none;
-        }
         .button {
             background-color: rgb(79,79,79);
             border: solid gray 1;
@@ -73,10 +63,6 @@
         <div id="mcronalds" class="mcronalds">
             <a href="https://actiniumbeasty.github.io/mcronalds/menu"> Menu! </a>
         </div>
-        <button class="button" onclick="myFunction2()"> CMAC Courier </button>
-        <div id="courier" class="courier">
-            <a href="https://actiniumbeasty.github.io/cmac/courier"> CMAC Courier! </a>
-        </div>
         <script>
             function myFunction() {
   var button1 = document.getElementById("about");
@@ -94,15 +80,6 @@
   }
   else {
     button2.style.display = "block";
-  }
-}
-             function myFunction1() {
-  var button3 = document.getElementById("courier");
-  if (button3.style.display === "block") {
-    button3.style.display = "none";
-  }
-  else {
-    button3.style.display = "block";
   }
 }
         </script>
