@@ -31,6 +31,16 @@
             border: solid gray 1px;
             display:none;
         }
+        .courier {
+            background-color:rgb(79, 79, 79);
+            width:380px;
+            height:20px;
+            position:absolute;
+            top:170px;
+            padding:5px;
+            border: solid gray 1px;
+            display:none;
+        }
         .button {
             background-color: rgb(79,79,79);
             border: solid gray 1;
@@ -54,14 +64,18 @@
     </style>
     <body>
         <h1>hello i am very bored </h1>
-        <button class="button" onclick="myFunction()"> About Me            </button>
+        <button class="button" onclick="myFunction()"> About Me </button>
         <div id="about" class="aboutMe">
             <p> Hello! I am a casual programmer who enjoys writing pages in HTML. I started coding in about April 2020 when the pandemic started and this was something that kept me entertained over the long periods where everyone had to stay at home. This is just something that won't really be updated. I will try and maintain it as best I can, but this is really just a side thing and schoolwork will be my main focus for a while. </p>
         </div>
         <br>
-        <button class="button" onclick="myFunction1()">McRonald's™         </button>
+        <button class="button" onclick="myFunction1()"> McRonald's™         </button>
         <div id="mcronalds" class="mcronalds">
             <a href="https://actiniumbeasty.github.io/mcronalds/menu"> Menu! </a>
+        </div>
+        <button class="button" onclick="myFunction2()"> CMAC Courier </button>
+        <div id="courier" class="courier">
+            <a href="https://actiniumbeasty.github.io/cmac/courier"> CMAC Courier! </a>
         </div>
         <script>
             function myFunction() {
@@ -75,6 +89,15 @@
 }
  function myFunction1() {
   var button2 = document.getElementById("mcronalds");
+  if (button2.style.display === "block") {
+    button2.style.display = "none";
+  }
+  else {
+    button2.style.display = "block";
+  }
+}
+             function myFunction1() {
+  var button2 = document.getElementById("courier");
   if (button2.style.display === "block") {
     button2.style.display = "none";
   }
